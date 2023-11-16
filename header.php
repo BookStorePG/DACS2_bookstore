@@ -11,8 +11,8 @@ session_start();
     <div class="header-1">
         <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
 
-        <form action="" class="search-form">
-            <input type="search" name="" placeholder="search here..." id="search-box">
+        <form  method="post" action="?act=search" class="search-form" >
+            <input type="search" name="content" placeholder="search here..." id="search-box">
             <button  type="submit" name="btn-search" for="search-box" class="fas fa-search"></button>
         </form>
 
