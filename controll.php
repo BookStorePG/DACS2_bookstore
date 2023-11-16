@@ -26,6 +26,9 @@
 		case "logout":
 		    require_once("logout.php");
         break;
+		case "search":
+		    require_once("search.php");
+        break;
         default:
 			require_once('home.php');
 		break;
