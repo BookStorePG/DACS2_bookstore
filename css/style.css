@@ -184,6 +184,7 @@ section{
     padding-right: 1.5rem;
     color: var(--black);
     cursor: pointer;
+    background:#fff;
 }
 
 .header .header-1 .search-form button:hover{
