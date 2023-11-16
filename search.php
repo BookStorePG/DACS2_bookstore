@@ -19,7 +19,7 @@
     ?>   
     <div class="swiper arrivals-slider">
         <div class="swiper-wrapper">
-            <a href="shop.php?pagegarden=products&id=<?php echo $row['product_id']?>" class="swiper-slide box">
+            <a href="?act=shop?pagegarden=products&id=<?php echo $row['product_id']?>" class="swiper-slide box">
 
                 <div class="image">
                     <img src="img/<?php echo $row['image'] ?>" >
