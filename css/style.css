@@ -667,7 +667,18 @@ section{
 
 /*----------------------- featured ---------------------- starts */
 
-.featured .featured-slider .box{
+.featured .containers{
+    max-width: 1300px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    grid-gap: 10px;
+    align-items: flex-start;
+    gap:1.5rem;
+    justify-content: center;
+}
+
+.featured .containers .box{
     margin: 2rem 0;
     position: relative;
     overflow: hidden;
@@ -677,24 +688,24 @@ section{
     box-shadow: var(--box-shadow);
 }
 
-.featured .featured-slider .box:hover{
+.featured .containers .box:hover{
     border: var(--border-hover);
 }
 
-.featured .featured-slider .box .image{
+.featured .containers .box .image{
     padding: 1rem;
     background: linear-gradient(#f4f6f3, #e5d88e);
 }
 
-.featured .featured-slider .box:hover .image{
+.featured .containers .box:hover .image{
     transform: translateY(6rem);
 }
 
-.featured .featured-slider .box img{
+.featured .containers .box img{
     height: 25rem;
 }
 
-.featured .featured-slider .box .icons{
+.featured .containers .box .icons{
     border-bottom: var(--border-hover);
     position: absolute;
     top: 0; left: 0; right: 0;
@@ -703,68 +714,43 @@ section{
     transform: translateY(-105%);
 }
 
-.featured .featured-slider .box:hover .icons{
+.featured .containers .box:hover .icons{
     transform: translateY(0%);
 }
 
-.featured .featured-slider .box .icons a{
+.featured .containers .box .icons a{
     color: var(--black);
     font-size: 2.2rem;
     padding: 1.3rem 1.5rem;
 }
 
-.featured .featured-slider .box .icons a:hover{
+.featured .containers .box .icons a:hover{
     background: var(--green);
     color: #ffffff;
 }
 
-.featured .featured-slider .box .content{
+.featured .containers .box .content{
     background: #eee;
     padding: 1.3rem;
 }
 
-.featured .featured-slider .box .content h3{
-    font-size: 1.7rem;
+.featured .containers .box .content h3{
+    font-size: 1.8rem;
     color: var(--black);
 }
 
-.featured .featured-slider .box .content .price{
+.featured .containers .box .content .price{
     font-size: 1.9rem;
     color: var(--black);
     padding-top: 1rem;
+    font-weight: 400;
 }
 
-.featured .featured-slider .box .content .price span{
+.featured .containers .box .content .price span{
     font-size: 1.3rem;
     color: var(--light-color);
     text-decoration: line-through;
 }
-
-
-/*---------- swiper-button ------------*/
-
-.swiper-button-next,
-.swiper-button-prev{
-    border: var(--border-hover);
-    height: 5rem;
-    width: 4rem;
-    color: var(--black);
-    background: #fff;
-    border-radius: 2rem;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after{
-    font-size: 2rem;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover{
-    background: var(--green);
-    color: #fff;
-}
-
-/* ------ swiper-button ------- */
 
 /*----------------------- featured ---------------------- end */
 
@@ -862,10 +848,11 @@ section{
 /*---------------------- arrivals ---------------------- starts */
 
 .arrivals .box-container{
-    max-width: 1200px;
+    max-width: 1300px;
     margin:0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 33rem);
+    grid-template-columns: repeat(auto-fit, 30rem);
+    grid-gap: 20px;
     align-items: flex-start;
     gap:2rem;
     justify-content: center;
@@ -886,7 +873,7 @@ section{
 }
 
 .arrivals .box-container .box .image {
-    height: 32rem;
+    height: 30rem;
 }
 
 .arrivals .box-container .box:hover img{
