@@ -29,6 +29,12 @@
 		case "search":
 		    require_once("search.php");
         break;
+		case "productdetail":
+		    require_once("productdetail.php");
+        break;
+		case "cart":
+		    require_once("cart.php");
+        break;
         default:
 			require_once('home.php');
 		break;
