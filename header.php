@@ -32,7 +32,7 @@ if(isset($message)){
         <div class="icons">
             <div id="search-btn" class="fas fa-search"></div>
             <a href="#" class="fa fa-heart"></a>
-            <div id="cart" class="fa fa-shopping-cart"></div>
+            <a href="?act=cart"><div id="cart" class="fa fa-shopping-cart"></div></a>
             <div href="" id="user-btn" class="fas fa-user"></div>
 
         </div>
