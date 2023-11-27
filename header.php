@@ -32,7 +32,13 @@ if(isset($message)){
         <div class="icons">
             <div id="search-btn" class="fas fa-search"></div>
             <a href="#" class="fa fa-heart"></a>
-            <a href="?act=cart"><div id="cart" class="fa fa-shopping-cart"></div></a>
+            <?php
+               $select_rows = mysqli_query($conn, "SELECT * FROM `cart`") or die('query failed');
+               $row_count = mysqli_num_rows($select_rows); 
+            ?>
+            <a href="?act=cart" class="cart-num">
+                <div id="cart" class="fa fa-shopping-cart"><span><?php echo $row_count; ?></span></div>
+            </a>
             <div href="" id="user-btn" class="fas fa-user"></div>
 
         </div>
