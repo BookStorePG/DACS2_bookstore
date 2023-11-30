@@ -88,7 +88,7 @@ if(isset($_POST['update_update_btn'])){
             <tr>
 
                 <td>
-                    <a href="?act=productdetail&id=">
+                    <a href="?act=productdetail&id=<?php echo $fetch_products['product_id']; ?>">
                         <img name="id" class="image" src="img/<?php echo $fetch_cart['image']; ?>" height="160" alt="">
                     </a>
                 </td>
