@@ -35,6 +35,14 @@ if(isset($message)){
             <?php
                $select_rows = mysqli_query($conn, "SELECT * FROM `cart`") or die('query failed');
                $row_count = mysqli_num_rows($select_rows); 
+
+                if(isset($_SESSION['user_id'])){
+                    $user_id = $_SESSION['user_id'];
+                    $select_rows = mysqli_query($conn, "SELECT * FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
+                    $row_count = mysqli_num_rows($select_rows); 
+                }else{
+                    $row_count = 0;
+                }
             ?>
             <a href="?act=cart" class="cart-num">
                 <div id="cart" class="fa fa-shopping-cart"><span><?php echo $row_count; ?></span></div>
