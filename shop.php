@@ -10,8 +10,6 @@ include 'add_to_cart.php';
 
 <section class="arrivals" id="arrivals">
 
-    <h1 class="heading"> <span>new arrivals</span></h1>
-
     <div class="box-container">
         <?php  
          $select_products = mysqli_query($conn, "SELECT * FROM `products`") or die('query failed');
@@ -20,11 +18,13 @@ include 'add_to_cart.php';
       ?>
 
         <form action="" method="post" class="box">
-            <a href="?act=productdetail&id=<?php echo $fetch_products['product_id']; ?>"><img name ="id"class="image"  src="img/<?php echo $fetch_products['image']; ?>" alt=""></a>
+            <a href="?act=productdetail&id=<?php echo $fetch_products['product_id']; ?>"><img name="id" class="image"
+                    src="img/<?php echo $fetch_products['image']; ?>" alt=""></a>
             <div class="name"><?php echo $fetch_products['name']; ?></div>
             <div class="price">$<?php echo $fetch_products['price']; ?></div>
             <div class="price_2">$<?php echo $fetch_products['original_price']; ?></div>
             <input type="number" min="1" name="product_quantity" value="1" class="qty">
+            <input type="hidden" name="product_id" value="<?php echo $fetch_products['product_id']; ?>">
             <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
             <input type="hidden" name="product_price" value="<?php echo $fetch_products['price']; ?>">
             <input type="hidden" name="product_ori_price" value="<?php echo $fetch_products['original_price']; ?>">
@@ -36,11 +36,11 @@ include 'add_to_cart.php';
         </form>
 
         <?php
-         }
-      }else{
-         echo '<p class="empty">no products added yet!</p>';
-      }
-      ?>
+            }
+            }else{
+               echo '<p class="empty">no products added yet!</p>';
+            }
+            ?>
 
     </div>
 
