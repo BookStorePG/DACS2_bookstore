@@ -1,5 +1,7 @@
 <?php
     include ("connect.php");
+    include ('add_to_cart.php');
+
     if(isset($_GET['id'])){
         $id=$_GET['id'];
     }else{
@@ -57,7 +59,7 @@
                         <div class="price">$<?php echo $row_detail['price']?></div>
                         <div class="sale">
                             <?php 
-                                $sale=round((($row_detail['original_price']-$row_detail['price'])/$row_detail['original_price'])*100,1);
+                                $sale=round((($row_detail['original_price']-$row_detail['price'])/$row_detail['original_price'])*100,2);
                                 echo $sale?>% OFF
                         </div>
                     </div>
