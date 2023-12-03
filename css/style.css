@@ -1715,6 +1715,120 @@ i.cart-top-item {
     background-color: var(--red);
  }
 
+
+/*----------------------checkout--------------------------*/
+.check-product{
+    background: #fff;
+    padding: 20px;
+    font-size: 13px;
+}
+.header-checkout-product-content{
+    display: flex;
+    align-items: center;
+}
+.product-content-name{
+    flex: 3;
+    padding-left: 20px;
+}
+.product-content-price ,.product-content-quantity ,.product-content-amount{
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    color: gray;
+}
+.checkout-product-content{
+    display: flex;
+    align-items: center;
+    padding:10px 0 0 20px;
+}
+.product-info{
+    flex: 3;
+    display: flex;
+    align-items: center;
+}
+.product-info img{
+    width: 50px;
+    margin:0 30px 0 10px;
+}
+.checkout-product-content span{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.container-checkout{
+    display: flex;
+    margin-top: 20px;
+}
+.checkout-info{
+    padding-top: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    background: #fff;
+    flex: 1;
+}
+.checkout-info h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+.form-info{
+    margin: 10px 90px;
+}
+.form-info button{
+    float: right;
+    
+}
+.form-info input{
+    border: 1px solid gray;
+    border-radius: 4px;
+    height: 35px;
+    width: 300px;
+    margin: 5px 0 20px 10px;
+}
+.checkout-product{
+    flex: 1;
+    padding-top: 10px;
+    font-size: 15px;
+    background: #fff;
+    height: 250px;
+}
+.checkout-product h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+.form-checkout{
+    margin: 10px 60px;
+    font-weight: bold;
+    padding: 0 30px;
+}
+.checkout-total ,.checkout-price ,.checkout-transp ,.checkout-amount{
+    margin-bottom: 10px;
+}
+.checkout-total span ,.checkout-price span, .checkout-transp span ,.checkout-amount span{
+    float: right;
+}
+.checkout-button{
+    text-align: right;
+    margin: 20px 85px;
+}
+.checkout-button button{
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #ee4d2d;
+    border: 2px solid #ee4d2d;
+    font-weight: bold;
+    cursor: pointer;
+}
+.checkout-button button:hover {
+    background-color: #eb330f;
+}
+
+
+
 /* ---------------------- footer ---------------------- start */
 
 .footer{
