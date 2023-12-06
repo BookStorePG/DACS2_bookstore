@@ -100,7 +100,13 @@
                         </div>
                         <div class="checkout-transp">
                             <label>Transport fee</label>
-                            <span>$5</span>
+                            <span>$<?php if($grand_total < 100){
+                                        echo '5';
+                                        }else{
+                                            echo '0';
+                                        }
+                                    ?>
+                            </span>
                         </div>
                         <div class="checkout-amount">
                             <label>Total price</label>
