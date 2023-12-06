@@ -62,7 +62,7 @@
         </div>
 
     </div>
-
+    <?php require_once '../connect.php'; ?>
     <?php include("controll.php");?>
 
     <script src="../js/main.js"> </script>
