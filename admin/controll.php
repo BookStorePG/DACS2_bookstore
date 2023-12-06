@@ -8,6 +8,9 @@
         case "add-product":
 		    require_once("add-product.php");
         break;
+	case "update-product":
+		    require_once("update-product.php");
+        break;
         default:
             require_once("list-product.php");
         break;
