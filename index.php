@@ -33,6 +33,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <!-- custom Javascript file link-->
+    <script src="js/scr.js"></script>
     <script src="js/script.js"></script>
 
 </body>
