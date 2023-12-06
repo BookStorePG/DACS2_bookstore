@@ -13,10 +13,9 @@
 <?php
     while($row_detail = mysqli_fetch_array($sql_detail)){
 ?>
-<section class="product-content">
+<section>
     <div class="pro">
-        <div class="product-top">
-        </div>
+        
         <form method="POST" action="?act=cart&id=<?php echo $row_detail['product_id']; ?>">
             <div class="product-content row">
                 <div class="product-content-left row">
@@ -119,7 +118,9 @@
                     </div>
                     <div class="product-content-bottom-content-img">
                         <div class="product-content-left-small-img">
-                            <?php echo $row_detail['image_small']?>
+                            <img src="img/<?php echo $row_detail['image']?>">
+                            <img src="img/<?php echo $row_detail['image_1']?>">
+                            <img src="img/<?php echo $row_detail['image_2']?>">
     
                         </div>
 
