@@ -69,6 +69,7 @@ ul,li {
     list-style: none;
 }
 a{
+    color:#000;
     text-decoration: none;
 }
 .navbar{
@@ -272,7 +273,7 @@ a{
     text-align: right;
     margin-top: 5px;
 }
-.button-save button{
+.button-save input{
     background: #0b921d;
     color: #fff;
     border-radius: 2px ;
@@ -280,7 +281,7 @@ a{
     width: 100px;
 
 }
-.button-save button:hover{
+.button-save input:hover{
     background: #075504;
     cursor: pointer;
 }
