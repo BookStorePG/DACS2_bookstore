@@ -272,6 +272,8 @@ section{
 
 .header .header-1 .account-box.active{
     display: inline-block;
+    z-index: 100;
+
 }
 
 .header .header-1 .account-box p{
