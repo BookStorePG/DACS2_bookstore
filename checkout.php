@@ -86,7 +86,7 @@
                         </div> 
                     
                     </div>
-                </div>
+               
                 <div class="checkout-product">
                     <h2>checkout</h2>
                     <div class="form-checkout">
