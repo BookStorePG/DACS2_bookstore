@@ -120,7 +120,7 @@
 
                     </div>
                 <div class="checkout-button">
-                <button><a href="?act=order">checkout</a></button>
+                <button>checkout</button>
                     </div>
                 </div>
             
