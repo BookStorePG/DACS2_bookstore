@@ -1771,14 +1771,14 @@ i.cart-top-item {
     text-align: center;
     text-transform: uppercase;
 }
-.form-info{
+/* .form-info{
     margin: 10px 90px;
 }
 .form-info button{
-    float: right;
+    float: right; */
     
 }
-.form-info input{
+.checkout-info input{
     border: 1px solid gray;
     border-radius: 4px;
     height: 35px;
